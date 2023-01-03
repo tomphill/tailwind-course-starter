@@ -9,6 +9,7 @@ const openVariant = plugin(function({addVariant}){
     addVariant("peer-open", ":merge(.group).open ~ &");
     
     // & specifically - it appends our class name to the built in attributes, allowing for more specificity for the generated output css.
+    // the merge directive is what allows the generated class names and makes sure that we do not end up with duplicated specificity, which can break on css.
 });
 
 module.exports = openVariant
