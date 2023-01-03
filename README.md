@@ -4,6 +4,9 @@ This is material was pulled from a [Udemy Tailwind CSS](https://www.udemy.com/co
 
 ## Notes on Tailwind
 
+Recommended that you include the Pretty and Tailwind CSS IntelliSense extensions.
+If you have the IntelliSense that it will allow you to hover on the Tailwind classes to see the output.
+
 ### Build
 
 See the package.json `"tw:build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"`, is where we enter and build our tailwind css for out of the box.
