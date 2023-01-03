@@ -8,3 +8,9 @@
         font-family: "Quicksand", sans-serif;
     }
 }
+
+@layer components {
+    .menu-item {
+        @apply relative flex h-full items-center p-4 cursor-pointer font-bold text-pink-200 hover:text-zinc-200 hover:bg-white/10 transition-colors ease-in-out;
+    }
+}

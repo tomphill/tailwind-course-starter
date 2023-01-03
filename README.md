@@ -40,3 +40,9 @@ Tailwind goes in groups of 4 pixels. Numbers for top, bottom, left, right, margi
 From google front, you import the style without the style tag.
 
 Then you will include `@layer` with a level of specificity and then inside of your html brackets, include the font-family you will now be importing.
+
+### Components
+
+Should be considered last if you are working with another language/framework that would allow you to create a component of their own.
+
+Using `@layer` again, you will reference the `components`, then nest the .class-name. Then using `@apply` provide all the tailwind attributes and close. 
