@@ -30,3 +30,7 @@ With the `--watch` flag on our build command, we are watching for changes   If y
 ### Preview
 
 To see changes while working, just right click on the index.html and click `Open with Default Browser`. Or you may see another browser `Open with` and the default browser with a > next to it. If you click on the > you should be able to select the browser you want to open with.
+
+### Measurements
+
+Tailwind goes in groups of 4 pixels. Numbers for top, bottom, left, right, margin and padding will be increased by multiples of 4 based on the number provided to them after the -.
