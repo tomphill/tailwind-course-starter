@@ -19,3 +19,7 @@ These can be levels of specificity. The order matters, just like regular css. Th
 The input will then be used to compile everything with tailwind is provided to the output for the build of the application.
 
 `npm run tw:build` - creates application in a [dist folder](./dist/output.css).
+
+### Watch
+
+With the `--watch` flag on our build command, we are watching for changes   If you go into the [tailwind config](./tailwind.config.js) looking at the content array, that is what we will determine if the dist content will need to be rerendered if they include tailwind classes.
