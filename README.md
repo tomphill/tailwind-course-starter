@@ -43,6 +43,8 @@ Then you will include `@layer` with a level of specificity and then inside of yo
 
 ### Components
 
-Should be considered last if you are working with another language/framework that would allow you to create a component of their own.
+Should be considered last if you are working with another framework that would allow you to create a component of their own.
 
-Using `@layer` again, you will reference the `components`, then nest the .class-name. Then using `@apply` provide all the tailwind attributes and close. 
+Using `@layer` again, you will reference the `components`, then nest the .class-name. Then using `@apply` provide all the tailwind attributes and close.
+
+This does increase the size of your build for your css.
