@@ -807,6 +807,10 @@ html {
   padding-right: 1rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .text-right{
   text-align: right;
 }
