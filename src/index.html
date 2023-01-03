@@ -14,7 +14,17 @@
           let mobileClass = mobileMenuIcon.classList
           mobileClass.contains("open") ? mobileClass.remove("open"): mobileClass.add("open")
         });
+
+      //ticket menu items
+      const mobileTicketMenu = document.getElementById("tickets-menu-item");
+        mobileTicketMenu.addEventListener("click", () => {
+          let mobileTicketClass = mobileTicketMenu.classList
+          mobileTicketClass.contains("open") ? mobileTicketClass.remove("open"): mobileTicketClass.add("open")
+        });
       };
+
+
+      
     </script>
   </head>
   <body>
@@ -41,14 +51,18 @@
               <div class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10 ease-in-out">
                 <span>Lineup</span>
               </div>
-              <div class="group relative  h-full cursor-pointer text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10 ease-in-out">
+              <div 
+              id ="tickets-menu-item"
+              class="group relative  h-full cursor-pointer text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10 ease-in-out">
                 <div class="p-4 text-center font-bold">Tickets
                 </div>
-                <div class="relative  text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out text-center p-4">
-                  <span>Single day tickets</span>
-                </div>
-                <div class="relative  text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out text-center p-4">
-                  <span>7 day tickets</span>
+                <div class="hidden group-open:block">
+                  <div class="relative  text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out text-center p-4">
+                    <span>Single day tickets</span>
+                  </div>
+                  <div class="relative  text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out text-center p-4">
+                    <span>7 day tickets</span>
+                  </div>
                 </div>
               </div>
               <div class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10 ease-in-out">
