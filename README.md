@@ -48,3 +48,11 @@ Should be considered last if you are working with another framework that would a
 Using `@layer` again, you will reference the `components`, then nest the .class-name. Then using `@apply` provide all the tailwind attributes and close.
 
 This does increase the size of your build for your css.
+
+
+#### Keywords
+
+- group: This will allow you to gather children elements together.
+
+- md: Can be using in conjunction with other elements to specific screen sizes.
+The way md is using on this project, we create two separate css options based on screen size.

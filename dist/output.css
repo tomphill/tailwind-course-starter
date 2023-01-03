@@ -651,6 +651,10 @@ html {
   right: 0px;
 }
 
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
@@ -853,4 +857,14 @@ html {
 
 .group:hover .group-hover\:block{
   display: block;
+}
+
+@media (min-width: 768px){
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
 }
