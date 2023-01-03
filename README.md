@@ -26,3 +26,7 @@ The input will then be used to compile everything with tailwind is provided to t
 ### Watch
 
 With the `--watch` flag on our build command, we are watching for changes   If you go into the [tailwind config](./tailwind.config.js) looking at the content array, that is what we will determine if the dist content will need to be rerendered if they include tailwind classes.
+
+### Preview
+
+To see changes while working, just right click on the index.html and click `Open with Default Browser`. Or you may see another browser `Open with` and the default browser with a > next to it. If you click on the > you should be able to select the browser you want to open with.
