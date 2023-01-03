@@ -60,3 +60,12 @@ Newly created plugins will need to be added to the [tailwind config](./tailwind.
 
 - md: Can be using in conjunction with other elements to specific screen sizes.
 The way md is using on this project, we create two separate css options based on screen size.
+
+#### Specific sizing
+
+Since sizing is done in units of 4, if you need a specific size between, you can use a - then [ ] and place the specific value between the square brackets.
+
+#### Peer classes
+
+Peer classes are a way to target functionality based on a sibling element.
+Keep this in mind if you a ~ as this is considered the "sibling selector".
