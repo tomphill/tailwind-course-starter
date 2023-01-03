@@ -34,3 +34,9 @@ To see changes while working, just right click on the index.html and click `Open
 ### Measurements
 
 Tailwind goes in groups of 4 pixels. Numbers for top, bottom, left, right, margin and padding will be increased by multiples of 4 based on the number provided to them after the -.
+
+### Fonts
+
+From google front, you import the style without the style tag.
+
+Then you will include `@layer` with a level of specificity and then inside of your html brackets, include the font-family you will now be importing.
