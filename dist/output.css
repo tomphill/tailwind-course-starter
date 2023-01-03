@@ -696,6 +696,44 @@ html {
   height: 100%;
 }
 
+.h-min{
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.h-\[\]{
+  height: ;
+}
+
+.h-\[1\]{
+  height: 1;
+}
+
+.h-\[calc\]{
+  height: calc;
+}
+
+.h-\[calc\(100\)\]{
+  height: calc(100);
+}
+
+.h-\[calc\(100vh\)\]{
+  height: calc(100vh);
+}
+
+.h-\[calc\(100vh-200px\)\]{
+  height: calc(100vh - 200px);
+}
+
+.min-h-\[\]{
+  min-height: ;
+}
+
+.min-h-\[400px\]{
+  min-height: 400px;
+}
+
 .w-8{
   width: 2rem;
 }
@@ -732,6 +770,10 @@ html {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.flex-col{
+  flex-direction: column;
 }
 
 .items-center{
@@ -785,6 +827,34 @@ html {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\)\]{
+  background-image: url();
+}
+
+.bg-\[url\(\'\'\)\]{
+  background-image: url('');
+}
+
+.bg-\[url\(\'\.\/ass\'\)\]{
+  background-image: url('./ass');
+}
+
+.bg-\[url\(\'\.\/assets\/\'\)\]{
+  background-image: url('./assets/');
+}
+
+.bg-\[url\(\'\.\/assets\/images\/\'\)\]{
+  background-image: url('./assets/images/');
+}
+
+.bg-\[url\(\'\.\/assets\/images\/hero\.jpg\'\)\]{
+  background-image: url('./assets/images/hero.jpg');
+}
+
+.bg-\[url\(\'\.\/assets\/images\/hero\.jpgssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss\'\)\]{
+  background-image: url('./assets/images/hero.jpgssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss');
+}
+
 .from-rose-500{
   --tw-gradient-from: #f43f5e;
   --tw-gradient-to: rgb(244 63 94 / 0);
@@ -793,6 +863,18 @@ html {
 
 .to-pink-500{
   --tw-gradient-to: #ec4899;
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-fixed{
+  background-attachment: fixed;
+}
+
+.bg-center{
+  background-position: center;
 }
 
 .p-2{

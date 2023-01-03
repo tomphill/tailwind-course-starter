@@ -6,6 +6,7 @@ This is material was pulled from a [Udemy Tailwind CSS](https://www.udemy.com/co
 
 Recommended that you include the Pretty and Tailwind CSS IntelliSense extensions.
 If you have the IntelliSense that it will allow you to hover on the Tailwind classes to see the output.
+Tailwind does not render dynamically, you should depend of library functionalities to do this for you instead and have those rules supersede Tailwind's.
 
 ### Build
 
@@ -61,10 +62,18 @@ Newly created plugins will need to be added to the [tailwind config](./tailwind.
 - md: Can be using in conjunction with other elements to specific screen sizes.
 The way md is using on this project, we create two separate css options based on screen size.
 
-#### Specific sizing
+#### Specific 
+
+##### sizing
 
 Since sizing is done in units of 4, if you need a specific size between, you can use a - then [ ] and place the specific value between the square brackets.
 
+If you are using the calc function within this, make sure there is either no space between variables or add underscores for spaces.
+
+##### elements
+
+You can also use this on specific elements as well, e.g.
+`bg-[url('./path/to/element')]`
 #### Peer classes
 
 Peer classes are a way to target functionality based on a sibling element.
