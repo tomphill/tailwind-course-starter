@@ -49,6 +49,10 @@ Using `@layer` again, you will reference the `components`, then nest the .class-
 
 This does increase the size of your build for your css.
 
+### Plugin - Variants
+
+These are items that don't exist within tailwind, but we want to create our own functionality. We have to import the plugin from tailwind and then allows us to merge various functionality from tailwind together. See [openVariant](./plugins/openVariant.js) for examples.
+Newly created plugins will need to be added to the [tailwind config](./tailwind.config.js), in the plugins array.
 
 #### Keywords
 

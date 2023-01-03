@@ -6,6 +6,16 @@
     <link href="../dist/output.css" rel="stylesheet" />
     <script defer src="./assets/fontawesome/js/solid.min.js"></script>
     <script defer src="./assets/fontawesome/js/fontawesome.min.js"></script>
+    <script> 
+    // script allows use to change the mobile view.
+      window.onload = () => {
+        const mobileMenuIcon = document.getElementById("mobile-menu-button");
+        mobileMenuIcon.addEventListener("click", () => {
+          let mobileClass = mobileMenuIcon.classList
+          mobileClass.contains("open") ? mobileClass.remove("open"): mobileClass.add("open")
+        });
+      };
+    </script>
   </head>
   <body>
     <main>
@@ -18,9 +28,15 @@
             </div>
           </div>
           <!-- mobile display -->
-          <div class="block md:hidden">
-            mobile nav
+          <div class="my-auto ml-auto block cursor-pointer pr-4 md:hidden">
+            <div id="mobile-menu-button" class="group">
+              <div class="top-0 bg-zinc-200 rounded-full w-8 h-1 group-open:rotate-45 transition-all group-open:top-2 relative"></div>
+              <div class="bg-zinc-200 rounded-full w-8 h-1 mt-1 opacity-100 group-open:opacity-0 transition-all"></div>
+              <div class="top-0 bg-zinc-200 rounded-full w-8 h-1 mt-1 group-open:-rotate-45 transition-all group-open:-top-2 relative"></div>
+            </div>
+
           </div>
+
           <!-- table and above screen sizes display -->
           <div class="md:flex hidden flex-1 items-center justify-end">
             <div class="menu-item">

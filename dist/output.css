@@ -651,6 +651,19 @@ html {
   right: 0px;
 }
 
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
+}
+
 .block{
   display: block;
 }
@@ -667,12 +680,12 @@ html {
   display: none;
 }
 
-.h-full{
-  height: 100%;
-}
-
 .h-1{
   height: 0.25rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .flex-1{
@@ -721,13 +734,8 @@ html {
   white-space: nowrap;
 }
 
-.rounded{
-  border-radius: 0.25rem;
-}
-
-.rounded-b{
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+.rounded-full{
+  border-radius: 9999px;
 }
 
 .rounded-b-md{
@@ -741,6 +749,11 @@ html {
 
 .border-none{
   border-style: none;
+}
+
+.bg-zinc-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
 
 .bg-pink-500{
@@ -768,6 +781,10 @@ html {
 
 .p-4{
   padding: 1rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
 }
 
 .text-right{
@@ -807,6 +824,10 @@ html {
           text-decoration-line: underline;
 }
 
+.opacity-100{
+  opacity: 1;
+}
+
 .ring{
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -815,6 +836,12 @@ html {
 
 .filter{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .transition-colors{
@@ -837,15 +864,6 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hover\:bg-white\/10:hover{
-  background-color: rgb(255 255 255 / 0.1);
-}
-
-.hover\:bg-white:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-white\/5:hover{
   background-color: rgb(255 255 255 / 0.05);
 }
@@ -857,6 +875,33 @@ html {
 
 .group:hover .group-hover\:block{
   display: block;
+}
+
+.group.open .group-open\:-top-2{
+  top: -0.5rem;
+}
+
+.group.open .group-open\:top-2{
+  top: 0.5rem;
+}
+
+.group.open .group-open\:rotate-45{
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+{
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group.open .group-open\:-rotate-45{
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group.open .group-open\:opacity-0{
+  opacity: 0;
 }
 
 @media (min-width: 768px){
