@@ -35,4 +35,4 @@ const animationDelay = plugin(({matchUtilities, theme}) => {
     }
 }); 
 
-module.export = animationDelay; 
+module.exports = animationDelay; 

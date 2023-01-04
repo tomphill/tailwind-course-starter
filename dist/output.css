@@ -664,6 +664,11 @@ html {
   margin-bottom: auto;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ml-auto{
   margin-left: auto;
 }
@@ -682,6 +687,10 @@ html {
 
 .mt-3{
   margin-top: 0.75rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
 }
 
 .block{
@@ -746,6 +755,10 @@ html {
 
 .w-1{
   width: 0.25rem;
+}
+
+.max-w-screen-lg{
+  max-width: 1024px;
 }
 
 .flex-1{
@@ -1046,6 +1059,21 @@ html {
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animation-delay-200{
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.animation-delay-\[150ms\]{
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+.animation-delay-300{
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
 .hover\:bg-white\/10:hover{
