@@ -10,6 +10,10 @@ Recommended that you include the Pretty and Tailwind CSS IntelliSense extensions
 If you have the IntelliSense that it will allow you to hover on the Tailwind classes to see the output.
 Tailwind does not render dynamically, you should depend of library functionalities to do this for you instead and have those rules supersede Tailwind's.
 
+### Base Elements
+
+Since Tailwind removes all tag formatting as a default, you can include your formatting for a specific tag within the [input](./src/input.css) within the base layer. Provide the tag name, like your would to regular CSS then add `@apply` and the relevant Tailwind formatting that should automatically be applied.
+
 ### Build
 
 See the package.json `"tw:build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"`, is where we enter and build our tailwind css for out of the box.
