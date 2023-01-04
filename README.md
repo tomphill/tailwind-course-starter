@@ -4,6 +4,8 @@ This is material was pulled from a [Udemy Tailwind CSS](https://www.udemy.com/co
 
 ## Notes on Tailwind
 
+The [official documentation](https://tailwindcss.com/docs)
+
 Recommended that you include the Pretty and Tailwind CSS IntelliSense extensions.
 If you have the IntelliSense that it will allow you to hover on the Tailwind classes to see the output.
 Tailwind does not render dynamically, you should depend of library functionalities to do this for you instead and have those rules supersede Tailwind's.
@@ -41,6 +43,18 @@ Tailwind goes in groups of 4 pixels. Numbers for top, bottom, left, right, margi
 From google front, you import the style without the style tag.
 
 Then you will include `@layer` with a level of specificity and then inside of your html brackets, include the font-family you will now be importing.
+
+### Animations
+
+The [default animations for tailwind](https://tailwindcss.com/docs/animation), here we want to discuss [custom animations](https://blog.logrocket.com/creating-custom-animations-tailwind-css/).
+
+To add animations you need to go into the [config](./tailwind.config.js) and `extend` the themes. This allows use access to the tailwind default values.
+
+We then want to access the keyframes and provide a new value that we will be creating the animation under.
+
+After we have provided the layout for the new animation you need to append/concatenate to your animations for tailwind providing the name to the animation lists.
+
+This animation created in the example also includes it's own plugin to provide deplay.
 
 ### Components
 
