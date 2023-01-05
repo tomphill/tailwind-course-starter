@@ -700,9 +700,9 @@ h6{
   margin-bottom: auto;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
+.mx-5{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .ml-auto{
@@ -727,6 +727,14 @@ h6{
 
 .mt-20{
   margin-top: 5rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
 }
 
 .block{
@@ -773,6 +781,10 @@ h6{
   height: 1rem;
 }
 
+.h-80{
+  height: 20rem;
+}
+
 .min-h-\[400px\]{
   min-height: 400px;
 }
@@ -791,6 +803,10 @@ h6{
 
 .w-1{
   width: 0.25rem;
+}
+
+.min-w-\[80\]{
+  min-width: 80;
 }
 
 .max-w-screen-lg{
@@ -852,6 +868,14 @@ h6{
   cursor: pointer;
 }
 
+.snap-x{
+  scroll-snap-type: x var(--tw-scroll-snap-strictness);
+}
+
+.snap-center{
+  scroll-snap-align: center;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -874,6 +898,14 @@ h6{
 
 .gap-1{
   gap: 0.25rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.overflow-x-auto{
+  overflow-x: auto;
 }
 
 .whitespace-nowrap{
@@ -990,6 +1022,10 @@ h6{
   padding-right: 1rem;
 }
 
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1057,6 +1093,17 @@ h6{
 
 .opacity-100{
   opacity: 1;
+}
+
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-black\/20{
+  --tw-shadow-color: rgb(0 0 0 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .outline-pink-500{
@@ -1190,5 +1237,9 @@ h6{
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:min-w-\[40\%\]{
+    min-width: 40%;
   }
 }
