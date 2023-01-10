@@ -23,7 +23,23 @@
         });
       };
 
+      //click handlers for headliner images carousel
 
+      const carousel = document.getElementById("carousel");
+      const previousButton = document.getElementById("previous");
+      const nextButton = document.getElementById("next");
+
+      nextButton.addEventListener("click", () => {
+        const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
+        
+        return carousel.scrollLeft = carousel.scrollLeft + itemWidth
+      });
+
+      previousButton.addEventListener("click", () => {
+        const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
+
+        return carousel.scrollLeft = carousel.scrollLeft - itemWidth
+      });
       
     </script>
   </head>
@@ -137,65 +153,76 @@
       <div class="max-w-screen-lg mx-5 mt-20">
         <h2>Headliners</h2>
         <p>Experience the sonic delight from these made-up artists across 7 days that music fans are calling "one of the many gigs that happen this year"</p>
-        <div class="mt-4 flex w-full gap-4 pb-5 snap-x overflow-x-auto">
+        <div class="flex">
+          <div id="previous" class="text-5xl flex justify-center items-center cursor-pointer p-2 relative -top-8">
+            <i class="fas fa-angle-left"></i>
+          </div>
+          
+          <div id="carousel" class="scroll-smooth flex-1 flex w-full gap-4 mt-4 pb-5 snap-x overflow-x-auto">
 
-          <div class="min-w-[80] md:min-w-[40%]">
-            <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"
-            style="background-image: url('./assets/images/band1.jpg')"
-            ></div>
-            <h5 class="mt-2">Corduroy Gary</h5>
-            <h6 >1st July 9:30pm - Main Stage</h6>
+            <div class="min-w-[80] md:min-w-[40%]">
+              <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"
+              style="background-image: url('./assets/images/band1.jpg')"
+              ></div>
+              <h5 class="mt-2">Corduroy Gary</h5>
+              <h6 >1st July 9:30pm - Main Stage</h6>
+            </div>
+  
+            <div class="min-w-[80] md:min-w-[40%]">
+              <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"
+              style="background-image: url('./assets/images/band2.jpg')"
+              ></div>
+              <h5 class="mt-2">Ken's Showing Off Again</h5>
+              <h6>2nd July 9:30pm - Main Stage</h6>
+            </div>
+  
+            <div class="min-w-[80] md:min-w-[40%]">
+              <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"
+              style="background-image: url('./assets/images/band3.jpg')"
+              ></div>
+              <h5 class="mt-2">Golden Quavers</h5>
+              <h6>3rd July 9:30pm - Main Stage</h6>
+            </div>
+  
+            <div class="min-w-[80] md:min-w-[40%]">
+              <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"
+              style="background-image: url('./assets/images/band4.jpg')"
+              ></div>
+              <h5 class="mt-2">Sonic Levity</h5>
+              <h6>4th July 9:30pm - Main Stage</h6>
+            </div>
+  
+            <div class="min-w-[80] md:min-w-[40%]">
+              <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"
+              style="background-image: url('./assets/images/band5.jpg')"
+              ></div>
+              <h5 class="mt-2">Not Really Dragons</h5>
+              <h6>5th July 9:30pm - Main Stage</h6>
+            </div>
+  
+            <div class="min-w-[80] md:min-w-[40%]">
+              <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"
+              style="background-image: url('./assets/images/band6.jpg')"
+              ></div>
+              <h5 class="mt-2">True Soul</h5>
+              <h6>6th July 9:30pm - Main Stage</h6>
+            </div>
+  
+            <div class="min-w-[80] md:min-w-[40%]">
+              <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"
+              style="background-image: url('./assets/images/band7.jpg')"
+              ></div>
+              <h5 class="mt-2">The General Store</h5>
+              <h6>7th July 9:30pm - Main Stage</h6>
+            </div>
+  
           </div>
 
-          <div class="min-w-[80] md:min-w-[40%]">
-            <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"
-            style="background-image: url('./assets/images/band2.jpg')"
-            ></div>
-            <h5 class="mt-2">Ken's Showing Off Again</h5>
-            <h6>2nd July 9:30pm - Main Stage</h6>
+          <div id="next" class="text-5xl flex justify-center items-center cursor-pointer p-2 relative -top-8">
+            <i class="fas fa-angle-right"></i>
           </div>
-
-          <div class="min-w-[80] md:min-w-[40%]">
-            <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"
-            style="background-image: url('./assets/images/band3.jpg')"
-            ></div>
-            <h5 class="mt-2">Golden Quavers</h5>
-            <h6>3rd July 9:30pm - Main Stage</h6>
-          </div>
-
-          <div class="min-w-[80] md:min-w-[40%]">
-            <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"
-            style="background-image: url('./assets/images/band4.jpg')"
-            ></div>
-            <h5 class="mt-2">Sonic Levity</h5>
-            <h6>4th July 9:30pm - Main Stage</h6>
-          </div>
-
-          <div class="min-w-[80] md:min-w-[40%]">
-            <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"
-            style="background-image: url('./assets/images/band5.jpg')"
-            ></div>
-            <h5 class="mt-2">Not Really Dragons</h5>
-            <h6>5th July 9:30pm - Main Stage</h6>
-          </div>
-
-          <div class="min-w-[80] md:min-w-[40%]">
-            <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"
-            style="background-image: url('./assets/images/band6.jpg')"
-            ></div>
-            <h5 class="mt-2">True Soul</h5>
-            <h6>6th July 9:30pm - Main Stage</h6>
-          </div>
-
-          <div class="min-w-[80] md:min-w-[40%]">
-            <div class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"
-            style="background-image: url('./assets/images/band7.jpg')"
-            ></div>
-            <h5 class="mt-2">The General Store</h5>
-            <h6>7th July 9:30pm - Main Stage</h6>
-          </div>
-
         </div>
+        
       </div>
     </main>
   </body>

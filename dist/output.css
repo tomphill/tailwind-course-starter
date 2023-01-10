@@ -695,6 +695,10 @@ h6{
   right: 0px;
 }
 
+.-top-8{
+  top: -2rem;
+}
+
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
@@ -906,6 +910,10 @@ h6{
 
 .overflow-x-auto{
   overflow-x: auto;
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .whitespace-nowrap{
