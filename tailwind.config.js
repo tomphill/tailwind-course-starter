@@ -22,6 +22,7 @@ module.exports = {
   plugins: [
     require("./plugins/openVariant"),
     require("./plugins/outlineSolid"),
-    require("./plugins/animationDelay")
+    require("./plugins/animationDelay"),
+    require("./plugins/tableCaption"),
   ],
 };
