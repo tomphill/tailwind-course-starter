@@ -709,6 +709,11 @@ h6{
   margin-right: 1.25rem;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ml-auto{
   margin-left: auto;
 }
@@ -1080,6 +1085,11 @@ h6{
   color: rgb(251 207 232 / var(--tw-text-opacity));
 }
 
+.text-zinc-900{
+  --tw-text-opacity: 1;
+  color: rgb(24 24 27 / var(--tw-text-opacity));
+}
+
 .underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1236,6 +1246,13 @@ h6{
 
 .group.open ~ .peer-open\:block{
   display: block;
+}
+
+@media (prefers-color-scheme: dark){
+  .dark\:text-zinc-200{
+    --tw-text-opacity: 1;
+    color: rgb(228 228 231 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 768px){
