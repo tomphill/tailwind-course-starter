@@ -1249,6 +1249,11 @@ h6{
 }
 
 @media (prefers-color-scheme: dark){
+  .dark\:bg-zinc-900{
+    --tw-bg-opacity: 1;
+    background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+  }
+
   .dark\:text-zinc-200{
     --tw-text-opacity: 1;
     color: rgb(228 228 231 / var(--tw-text-opacity));
