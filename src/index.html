@@ -39,12 +39,28 @@
 
           return carousel.scrollLeft = carousel.scrollLeft - itemWidth
         });
+
+        //dark and light mode
+
+        darkModeToggle = document.getElementById("dark-mode-toggle");
+
+        darkModeToggle.addEventListener("click", ()=> {
+          let docClass = document.body.classList;
+          return docClass.contains("dark") ? docClass.remove("dark") : docClass.add("dark");
+        });
       
       };
     </script>
   </head>
   <body>
     <main class="bg-zinc-200 dark:bg-zinc-900">
+
+      <!-- toggle light and dark mode -->
+      <div id="dark-mode-toggle" class="fixed top-24 right-0 inline-block w-12 cursor-pointer rounded-l-lg bg-zinc-900 dark:bg-zinc-200 text-zinc-200 dark:text-zinc-900 p-2 text-3xl z-10">
+        <i class="fa-solid fa-sun dark:hidden"></i>
+        <i class="fa-solid fa-moon hidden dark:inline"></i>
+      </div>
+
       <header class="text-zinc-200">
         <nav class="sticky flex top-0 bg-gradient-to-r from-rose-500 to-pink-500">
           <div class="flex items-center p-2 gap-2">

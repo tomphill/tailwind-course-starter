@@ -10,6 +10,8 @@ Recommended that you include the Pretty and Tailwind CSS IntelliSense extensions
 If you have the IntelliSense that it will allow you to hover on the Tailwind classes to see the output.
 Tailwind does not render dynamically, you should depend of library functionalities to do this for you instead and have those rules supersede Tailwind's.
 
+If you make any changes to your config file, then you will need to restart and rebuild.
+
 ### Base Elements
 
 Since Tailwind removes all tag formatting as a default, you can include your formatting for a specific tag within the [input](./src/input.css) within the base layer. Provide the tag name, like your would to regular CSS then add `@apply` and the relevant Tailwind formatting that should automatically be applied.
@@ -47,6 +49,8 @@ Tailwind goes in groups of 4 pixels. Numbers for top, bottom, left, right, margi
 From google front, you import the style without the style tag.
 
 Then you will include `@layer` with a level of specificity and then inside of your html brackets, include the font-family you will now be importing.
+
+This project uses [font-awesome](https://fontawesome.com/) to icons.
 
 ### Animations
 
@@ -96,3 +100,9 @@ You can also use this on specific elements as well, e.g.
 
 Peer classes are a way to target functionality based on a sibling element.
 Keep this in mind if you a ~ as this is considered the "sibling selector".
+
+#### Dark mode
+
+Tailwind provides are option for dark mode based on your preferences on browser or computer. Just use the `dark:` option within your classes.
+
+Make sure that you have the `darkMode: "class"` also get on your [tw config file](./tailwind.config.js).
