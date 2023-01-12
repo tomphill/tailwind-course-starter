@@ -707,6 +707,10 @@ h6{
   top: -2rem;
 }
 
+.left-1\/2{
+  left: 50%;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -765,6 +769,26 @@ h6{
   margin-bottom: 2.5rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.ml-\[\]{
+  margin-left: ;
+}
+
+.ml-\[-8px\]{
+  margin-left: -8px;
+}
+
+.-ml-\[-8px\]{
+  margin-left: 8px;
+}
+
+.-ml-\[8px\]{
+  margin-left: -8px;
+}
+
 .block{
   display: block;
 }
@@ -779,6 +803,10 @@ h6{
 
 .table{
   display: table;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -817,6 +845,10 @@ h6{
   height: 20rem;
 }
 
+.h-8{
+  height: 2rem;
+}
+
 .min-h-\[400px\]{
   min-height: 400px;
 }
@@ -839,6 +871,10 @@ h6{
 
 .w-12{
   width: 3rem;
+}
+
+.w-4{
+  width: 1rem;
 }
 
 .min-w-\[80\]{
@@ -916,6 +952,10 @@ h6{
   scroll-snap-align: center;
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -944,6 +984,10 @@ h6{
   gap: 1rem;
 }
 
+.gap-8{
+  gap: 2rem;
+}
+
 .overflow-x-auto{
   overflow-x: auto;
 }
@@ -970,6 +1014,10 @@ h6{
 
 .rounded-sm{
   border-radius: 0.125rem;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .rounded-b-md{
@@ -1033,8 +1081,17 @@ h6{
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
+.bg-zinc-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-b{
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
 .from-rose-500{
@@ -1043,8 +1100,29 @@ h6{
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-sky-500{
+  --tw-gradient-from: #0ea5e9;
+  --tw-gradient-to: rgb(14 165 233 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-sky-900{
+  --tw-gradient-from: #0c4a6e;
+  --tw-gradient-to: rgb(12 74 110 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-cyan-900{
+  --tw-gradient-to: rgb(22 78 99 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #164e63, var(--tw-gradient-to);
+}
+
 .to-pink-500{
   --tw-gradient-to: #ec4899;
+}
+
+.to-teal-900{
+  --tw-gradient-to: #134e4a;
 }
 
 .bg-cover{
@@ -1084,6 +1162,21 @@ h6{
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pr-4{
@@ -1153,6 +1246,11 @@ h6{
 .text-zinc-900{
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
+}
+
+.text-zinc-400{
+  --tw-text-opacity: 1;
+  color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
 .underline{

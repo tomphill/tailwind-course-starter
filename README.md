@@ -48,6 +48,20 @@ If you are not seeing the changes you made, go into your terminal and make sure 
 
 Tailwind goes in groups of 4 pixels. Numbers for top, bottom, left, right, margin and padding will be increased by multiples of 4 based on the number provided to them after the -.
 
+If you want to specify the value instead of using units of 4, after - then [ ] and place the specific value between the square brackets.
+
+#### Calc
+
+If you are using the calc function within this, make sure there is either no space between variables or add underscores for spaces.
+
+#### Percentages
+
+You can use percentages by using fractions in place of the percentage number and symbol.
+
+#### Negative Values
+
+If you are trying to specify a negative value you can add a - to the front of the attribute or inside of the specific value inside [].
+
 ### Fonts
 
 From google front, you import the style without the style tag.
@@ -67,6 +81,10 @@ We then want to access the keyframes and provide a new value that we will be cre
 After we have provided the layout for the new animation you need to append/concatenate to your animations for tailwind providing the name to the animation lists.
 
 This animation created in the example also includes it's own plugin to provide deplay.
+
+### Gradient
+
+While Gradients require a to and from value after they have been specified, you can add more colors by including the term `via` with the additional colors. See the timeline section for an example.
 
 ### Components
 
@@ -88,19 +106,13 @@ Newly created plugins will need to be added to the [tailwind config](./tailwind.
 - md: Can be using in conjunction with other elements to specific screen sizes.
 The way md is using on this project, we create two separate css options based on screen size.
 
-#### Specific 
-
-##### sizing
-
-Since sizing is done in units of 4, if you need a specific size between, you can use a - then [ ] and place the specific value between the square brackets.
-
-If you are using the calc function within this, make sure there is either no space between variables or add underscores for spaces.
+#### Specific
 
 ##### elements
 
 You can also use this on specific elements as well, e.g.
 `bg-[url('./path/to/element')]`
-#### Peer classes
+#### Peer Classes
 
 Peer classes are a way to target functionality based on a sibling element.
 Keep this in mind if you a ~ as this is considered the "sibling selector".
