@@ -627,6 +627,24 @@ h6{
   }
 }
 
+.btn{
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.btn-\[\#000\]{
+  background-color: #000;
+  color: white;
+}
+
+.btn-\[\#500\]{
+  background-color: #500;
+  color: white;
+}
+
 .menu-item{
   position: relative;
   display: flex;
@@ -711,10 +729,6 @@ h6{
   left: 50%;
 }
 
-.top-12{
-  top: 3rem;
-}
-
 .top-1\/2{
   top: 50%;
 }
@@ -765,32 +779,8 @@ h6{
   margin-top: 0.5rem;
 }
 
-.mb-1{
-  margin-bottom: 0.25rem;
-}
-
-.mb-3{
-  margin-bottom: 0.75rem;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
 .mt-5{
   margin-top: 1.25rem;
-}
-
-.ml-\[\]{
-  margin-left: ;
-}
-
-.ml-\[-8px\]{
-  margin-left: -8px;
-}
-
-.-ml-\[-8px\]{
-  margin-left: 8px;
 }
 
 .-ml-\[8px\]{
@@ -851,10 +841,6 @@ h6{
 
 .h-80{
   height: 20rem;
-}
-
-.h-8{
-  height: 2rem;
 }
 
 .min-h-\[400px\]{
@@ -1132,12 +1118,6 @@ h6{
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-sky-500{
-  --tw-gradient-from: #0ea5e9;
-  --tw-gradient-to: rgb(14 165 233 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-sky-900{
   --tw-gradient-from: #0c4a6e;
   --tw-gradient-to: rgb(12 74 110 / 0);
@@ -1191,16 +1171,6 @@ h6{
   padding-right: 1rem;
 }
 
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1209,6 +1179,11 @@ h6{
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pr-4{
