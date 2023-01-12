@@ -250,7 +250,18 @@
         <p>Follow the timetable and stage to ensure you don't miss your favorite artists</p>
 
         <div id="timeline" class="relative mt-5 rounded-lg bg-zinc-800 py-4 px-2 text-zinc-200">
-          <div class="absolute top-0 left-1/2 -ml-[8px] h-full w-4 rounded-full bg-gradient-to-b from-sky-900 via-cyan-900 to-teal-900"></div>
+          <div class="absolute top-0 left-1/2 -ml-[8px] h-full w-4 rounded-full bg-gradient-to-b from-sky-900 via-cyan-900 to-teal-900">
+
+            <div 
+            id="tracker"
+            class="sticky top-1/2" 
+            >
+              <div class="relative h-4 w-4">
+                <div id="pulse" class="h-4 w-4 animate-ping rounded-full bg-rose-500 opacity-75 absolute"></div>
+                <div id="pin" class="bg-rose-500 rounded-full relative h-4 w-4"></div>
+              </div>
+            </div>
+          </div>
 
           <div class="grid grid-cols-2 gap-8">
             <div>
